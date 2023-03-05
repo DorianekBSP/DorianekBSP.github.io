@@ -26,9 +26,16 @@ img:hover {
 }
 
 a {
-flex: 0 1 31%;
+flex: 0 1 100%;
 }
 
 h1 {
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  a {
+    flex: 0 1 31%;
+  }
 }
