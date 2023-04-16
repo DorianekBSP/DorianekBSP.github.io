@@ -10,8 +10,8 @@ width: 100%;
 div {
 width: 100%;
 display: flex;
-flex-wrap: wrap;
 justify-content: space-evenly;
+align-content: space-evenly;
 flex-flow: row wrap;
 position: relative;
 margin: auto;
