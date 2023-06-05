@@ -3,7 +3,7 @@ let currentPhoto = 1;
 const totalPhotos = 41;
 
 function updatePhoto() {
-  photoElement.src = "Photos/Photo (' + currentPhoto + ').JPG";
+  photoElement.src = "Photos/Photo (" + currentPhoto + ").JPG";
 }
 
 function previousPhoto() {
