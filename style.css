@@ -12,7 +12,7 @@ width: 100%;
   align-items: center;
 }
 
-.left, .right {
+#left, #right {
   flex: 1;
   height: 100%;
 }
