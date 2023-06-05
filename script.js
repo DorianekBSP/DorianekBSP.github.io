@@ -14,3 +14,5 @@ function nextPhoto() {
   }
   photoElement.src = "Photos/Photo (" + currentPhoto + ").JPG";
 }
+
+alert(document.getElementById("photo").offsetHeight;
