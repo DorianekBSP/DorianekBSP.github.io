@@ -13,11 +13,6 @@ img {
   margin: auto;
 }
 
-.gallery, h1 {
-  width: 100%;
-  text-align: center;
-}
-
 h1 {
   text-align: center;
   clear: both;
