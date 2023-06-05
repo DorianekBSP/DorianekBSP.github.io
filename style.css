@@ -7,15 +7,23 @@ height: 100%;
 width: 100%;
 }
 
-img {
-  float: left;
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.left, .right {
+  flex: 1;
+  height: 100%;
+}
+
+#photo {  
   width: 90%;
-  margin: auto;
+  height: auto;
 }
 
 h1 {
   text-align: center;
-  clear: both;
 }
 
 button {
