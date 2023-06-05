@@ -7,10 +7,6 @@ height: 100%;
 width: 100%;
 }
 
-.gallery {
-  width: 100%;
-}
-
 img {
   float: left;
   width: 90%;
@@ -18,6 +14,7 @@ img {
 }
 
 .gallery, h1 {
+  width: 100%;
   text-align: center;
 }
 
