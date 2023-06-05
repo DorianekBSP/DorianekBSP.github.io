@@ -7,37 +7,15 @@ height: 100%;
 width: 100%;
 }
 
-div {
-width: 100%;
-display: flex;
-justify-content: space-evenly;
-align-content: space-evenly;
-flex-flow: row wrap;
-position: relative;
-margin: auto;
-}
-
-img {
-width: 100%;
-height: auto;
-}
-
-img:hover {
-  box-sizing: border-box;
-  border: 8px solid black;
-}
-
-a {
-flex: 0 1 100%;
-}
-
-h1 {
+.gallery {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  a {
-    flex: 0 1 33%;
-  }
+.navigation {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
 }
