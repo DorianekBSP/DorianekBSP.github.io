@@ -14,3 +14,7 @@ function nextPhoto() {
   }
   photoElement.src = "Photos/Photo (" + currentPhoto + ").JPG";
 }
+
+var object1 = document.
+var heightObject1 = object1.offsetHeight;
+document.querySelector('.object2').style.height = heightObject1 + 'px';
