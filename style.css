@@ -21,6 +21,11 @@ img {
   text-align: center;
 }
 
+h1 {
+  text-align: center;
+  clear: both;
+}
+
 button {
   float: left;
   width: 5%;
