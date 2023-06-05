@@ -7,6 +7,10 @@ height: 100%;
 width: 100%;
 }
 
+.gallery {
+  width: 100%;
+}
+
 img {
   float: left;
   width: 90%;
