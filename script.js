@@ -1,13 +1,9 @@
-window.addEventListener('load', function() {
-  const currentPhotoNumber = document.getElementById("currentPhotoNumber");
-  const photoNumberInput = document.getElementById("photoNumberInput");
-  const photoElement = document.getElementById('photo');
-  const right = document.getElementById("right");
-  const left = document.getElementById("left");
+
   const totalPhotos = 41;
   let currentPhoto = 1;
 
   function previousPhoto() {
+  const photoNumberInput = document.getElementById("photoNumberInput");
     if (currentPhoto > 1) {
       currentPhoto--;
     }
@@ -16,6 +12,8 @@ window.addEventListener('load', function() {
 }
 
   function nextPhoto() {
+    const photoNumberInput = document.getElementById("photoNumberInput");
+    const photoElement = document.getElementById('photo');
     if (currentPhoto < totalPhotos) {
       currentPhoto++;
     }
@@ -24,6 +22,7 @@ window.addEventListener('load', function() {
   }
 
   function jumpToPhoto() {
+    const photoElement = document.getElementById('photo');
     const photoNumber = parseInt(photoNumberInput.value);
     if (photoNumber >= 1 && photoNumber <= totalPhotos) {
       currentPhoto = photoNumber;
@@ -31,10 +30,3 @@ window.addEventListener('load', function() {
       currentPhotoNumber.textContent = currentPhoto.toString();
     }
   }
-  
-  function setButtonHeight() {
-    const size = photoElement.offsetHeight + "px"
-    right.style.height = size;
-    left.style.height = size;
-  }
-});
