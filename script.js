@@ -4,11 +4,12 @@
 
   function previousPhoto() {
   const photoNumberInput = document.getElementById("photoNumberInput");
+  const photoElement = document.getElementById('photo');
     if (currentPhoto > 1) {
       currentPhoto--;
     }
     photoElement.src = `Photos/Photo (${currentPhoto}).JPG`;
-    currentPhotoNumber.textContent = currentPhoto.toString();
+    currentPhotoNumber.textContent = currentPhoto.toString() + "/" + totalPhotos.toString();
 }
 
   function nextPhoto() {
