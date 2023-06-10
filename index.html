@@ -1,4 +1,4 @@
-<!doctypehtml>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -13,6 +13,14 @@
       <button id="left" onclick="previousPhoto()">&lt;</button>
       <img id="photo" src="Photos/Photo (1).JPG">
       <button id="right" onclick="nextPhoto()">&gt;</button>
+    </div>
+    <div class="photo-number">
+      Current Photo: <span id="currentPhotoNumber">1</span>
+    </div>
+    <div class="jump-to-photo">
+      Jump to Photo: 
+      <input type="number" id="photoNumberInput" min="1" max="41" value="1">
+      <button onclick="jumpToPhoto()">Go</button>
     </div>
     <h1>E-mail: doriandominik49@wp.pl, Facebook: <a href="https://www.facebook.com/profile.php?id=100077063484869">Dorian Pająk</a></h1>
     <script src="script.js"></script>
