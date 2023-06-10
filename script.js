@@ -18,7 +18,7 @@
       currentPhoto++;
     }
     photoElement.src = `Photos/Photo (${currentPhoto}).JPG`;
-    currentPhotoNumber.textContent = currentPhoto.toString();
+    currentPhotoNumber.textContent = currentPhoto.toString() + "/" + totalPhotos.toString();
   }
 
   function jumpToPhoto() {
