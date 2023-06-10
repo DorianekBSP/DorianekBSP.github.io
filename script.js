@@ -36,9 +36,3 @@ function setButtonHeight() {
   right.style.height = size;
   left.style.height = size;
 }
-
-window.addEventListener('resize', setButtonHeight);
-window.addEventListener('DOMContentLoaded', function() {
-  setButtonHeight();
-  currentPhotoNumber.textContent = currentPhoto.toString();
-});
