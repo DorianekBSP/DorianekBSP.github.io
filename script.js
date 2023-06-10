@@ -28,6 +28,6 @@
     if (photoNumber >= 1 && photoNumber <= totalPhotos) {
       currentPhoto = photoNumber;
       photoElement.src = `Photos/Photo (${currentPhoto}).JPG`;
-      currentPhotoNumber.textContent = currentPhoto.toString();
+      currentPhotoNumber.textContent = currentPhoto.toString() + "/" + totalPhotos.toString();
     }
   }
