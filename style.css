@@ -26,3 +26,7 @@ width: 100%;
 h1 {
   text-align: center;
 }
+
+#photoNumberInput, .jumpButton {
+  margin: auto;
+}
