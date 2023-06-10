@@ -26,3 +26,18 @@ width: 100%;
 h1 {
   text-align: center;
 }
+
+.jump-to-photo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.jump-to-photo h1 {
+  margin-bottom: 10px;
+}
+
+.jump-to-photo input[type="number"],
+.jump-to-photo button.jumpButton {
+  display: block;
+  margin: 10px auto;
+}
