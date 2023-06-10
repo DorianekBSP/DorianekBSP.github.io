@@ -1,3 +1,5 @@
+const currentPhotoNumber = document.getElementById("currentPhotoNumber");
+const photoNumberInput = document.getElementById("photoNumberInput");
 const photoElement = document.getElementById('photo');
 const right = document.getElementById("right");
 const left = document.getElementById("left");
@@ -9,7 +11,7 @@ function previousPhoto() {
     currentPhoto--;
   }
   photoElement.src = `Photos/Photo (${currentPhoto}).JPG`;
-  updatePhotoNumber();
+  currentPhotoNumber.textContent = currentPhoto.toString();
 }
 
 function nextPhoto() {
@@ -17,22 +19,16 @@ function nextPhoto() {
     currentPhoto++;
   }
   photoElement.src = `Photos/Photo (${currentPhoto}).JPG`;
-  updatePhotoNumber();
+  currentPhotoNumber.textContent = currentPhoto.toString();
 }
 
 function jumpToPhoto() {
-  const photoNumberInput = document.getElementById("photoNumberInput");
   const photoNumber = parseInt(photoNumberInput.value);
   if (photoNumber >= 1 && photoNumber <= totalPhotos) {
     currentPhoto = photoNumber;
     photoElement.src = `Photos/Photo (${currentPhoto}).JPG`;
-    updatePhotoNumber();
+    currentPhotoNumber.textContent = currentPhoto.toString();
   }
-}
-
-function updatePhotoNumber() {
-  const currentPhotoNumber = document.getElementById("currentPhotoNumber");
-  currentPhotoNumber.textContent = currentPhoto.toString();
 }
 
 function setButtonHeight() {
@@ -44,5 +40,5 @@ function setButtonHeight() {
 window.addEventListener('resize', setButtonHeight);
 window.addEventListener('DOMContentLoaded', function() {
   setButtonHeight();
-  updatePhotoNumber();
+  currentPhotoNumber.textContent = currentPhoto.toString();
 });
