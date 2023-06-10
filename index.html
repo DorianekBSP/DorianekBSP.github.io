@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>DorianekBSP</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1" />
@@ -15,14 +16,13 @@
       <button id="right" onclick="nextPhoto()">&gt;</button>
     </div>
     <div class="photo-number">
-      Current Photo: <span id="currentPhotoNumber">1</span>
+      Bieżące zdjęcie/Current photo: <span id="currentPhotoNumber">1/41</span>
     </div>
     <div class="jump-to-photo">
-      Skocz do zdjęcia/Jump to Photo: 
+      Skocz do zdjęcia/Jump to photo: 
       <input type="number" id="photoNumberInput" min="1" max="41" value="1">
-      <button onclick="jumpToPhoto()">Idź/Go</button>
+      <button class="jumpButton" onclick="jumpToPhoto()">Idź/Go</button>
     </div>
     <h1>E-mail: doriandominik49@wp.pl, Facebook: <a href="https://www.facebook.com/profile.php?id=100077063484869">Dorian Pająk</a></h1>
-    <script src="script.js"></script>
   </body>
 </html>
