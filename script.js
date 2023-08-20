@@ -1,5 +1,5 @@
 
-  const totalPhotos = 58;
+  const totalPhotos = 66;
   let currentPhoto = 1;
 
   function previousPhoto() {
