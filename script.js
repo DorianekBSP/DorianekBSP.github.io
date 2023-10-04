@@ -1,4 +1,4 @@
-const totalPhotos = 77;
+const totalPhotos = 81;
 let currentPhoto = 1;
 let isEnglish = false;
 
