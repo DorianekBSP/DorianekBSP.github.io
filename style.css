@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-html, body, #container {
+html, body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -29,12 +29,6 @@ label {
   margin-right: auto;
 }
 
-.divToStyle {
-	text-align: center;
-	color: #fff;
-	font-size: 1vw;
-}
-
 button, input {
 	appearance: none;
 	background-color: #2ea44f;
@@ -46,8 +40,8 @@ button, input {
 	display: inline-block;
 	font-size: 14px;
 	font-weight: 600;
-	line-height: 20px;
-	padding: 6px 16px;
+	line-height: 2vw;
+	padding: 0px;
 	position: relative;
 	text-align: center;
 	text-decoration: none;
@@ -56,6 +50,7 @@ button, input {
 	touch-action: manipulation;
 	vertical-align: middle;
 	white-space: nowrap;
+	font-size: 2vw;
 }
 
 button:focus:not(:focus-visible):not(.focus-visible) {
@@ -87,6 +82,7 @@ button:active {
 .divToStyle {
 	text-align: center;
 	color: #fff;
+	font-size: 2vw;
 }
 
 a:link, a:hover, a:visited {
