@@ -60,3 +60,4 @@ function preloadImages() {
 	}
 }
 window.onload = preloadImages;
+preloadImages();
