@@ -50,3 +50,13 @@ function toggleLanguage() {
 		document.getElementById("jumpButton").innerHTML = "Skocz";
 	}
 }
+
+let preloadedImages = [];
+function preloadImages() {
+	for (let i = 1; i <= totalPhotos; i++) {
+		let img = new Image();
+                img.src = "Photos/" + "Photo (" + [i] + ").JPG";
+                preloadedImages.push(img);
+	}
+}
+window.onload = preloadImages;
