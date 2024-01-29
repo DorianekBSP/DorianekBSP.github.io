@@ -9,6 +9,14 @@ html, body {
 	font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
 
+#loadingScreen {
+	margin: auto;
+}
+
+#displayItAfterLoading {
+	display: none;
+}
+
 #left, #right {
 	width: 5%;
 	float: left;
