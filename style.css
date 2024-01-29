@@ -10,7 +10,8 @@ html, body {
 }
 
 #loadingScreen {
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #displayItAfterLoading {
