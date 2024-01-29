@@ -1,4 +1,3 @@
-alert(false);
 const totalPhotos = 81;
 let currentPhoto = 1;
 let isEnglish = false;
@@ -32,7 +31,6 @@ function jumpToPhoto() {
 }
 
 function loadButtonsSize() {
-	alert(true);
 	document.getElementById("left").style.height = document.getElementById("photo").offsetHeight + "px";
 	document.getElementById("right").style.height = document.getElementById("photo").offsetHeight + "px";
 }
@@ -70,6 +68,7 @@ function preloadImages() {
 		img.onload = function() {
 			document.getElementById("loadingLabel").innerHTML = "Ładowanie/Loading... (" + i + "/" + totalPhotos + ")";
 			if (i == 1) {
+				alert(1)
 				document.getElementById("left").style.height = document.getElementById("photo").offsetHeight + "px";
 				document.getElementById("right").style.height = document.getElementById("photo").offsetHeight + "px";
 			}
