@@ -57,6 +57,7 @@ function preloadImages() {
 		let img = new Image();
                 img.src = "Photos/" + "Photo (" + [i] + ").JPG";
                 preloadedImages.push(img);
+		img.onload = function() { document.write(i); }
 	}
 }
 window.onload = preloadImages;
