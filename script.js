@@ -51,12 +51,29 @@ function toggleLanguage() {
 	}
 }
 
+let shouldSkip = false
+function skipLoading() {
+	shouldSkip = true;
+}
+
 let preloadedImages = [];
 function preloadImages() {
 	for (let i = 1; i <= totalPhotos; i++) {
 		let img = new Image();
-                img.src = "Photos/" + "Photo (" + [i] + ").JPG";
-                preloadedImages.push(img);
+		img.src = "Photos/" + "Photo (" + [i] + ").JPG";
+        preloadedImages.push(img);
+		img.onload = function() {
+			document.getElementById("loadingLabel").innerHTML = "Ładowanie/Loading... (" + i + "/" + totalPhotos + ")";
+			if (i == totalPhotos) {
+				document.getElementById("loadingScreen").style.display = "none";
+				document.getElementById("displayItAfterLoading").style.display = "block";
+			}
+		}
+		if (shouldSkip) {
+			document.getElementById("loadingScreen").style.display = "none";
+			document.getElementById("displayItAfterLoading").style.display = "block";
+			break;
+		}
 	}
 }
 window.onload = preloadImages;
