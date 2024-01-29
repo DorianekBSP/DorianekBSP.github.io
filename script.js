@@ -31,8 +31,12 @@ function jumpToPhoto() {
 }
 
 function loadButtonsSize() {
+	let previousSize = document.getElementById("left").style.height
 	document.getElementById("left").style.height = document.getElementById("photo").offsetHeight + "px";
 	document.getElementById("right").style.height = document.getElementById("photo").offsetHeight + "px";
+	if (previousSize == document.getElementById("left").style.height) {
+		setTimeout(loadButtonsSize);
+	}
 }
 window.addEventListener('resize', loadButtonsSize);
 
@@ -78,4 +82,7 @@ function preloadImages() {
 	}
 }
 window.onload = preloadImages;
+document.addEventListener("DOMContentLoaded", function () {
+  preloadImages();
+});
 preloadImages();
