@@ -31,6 +31,7 @@ function jumpToPhoto() {
 }
 
 function loadButtonsSize() {
+	alert(true);
 	document.getElementById("left").style.height = document.getElementById("photo").offsetHeight + "px";
 	document.getElementById("right").style.height = document.getElementById("photo").offsetHeight + "px";
 }
@@ -67,6 +68,10 @@ function preloadImages() {
         preloadedImages.push(img);
 		img.onload = function() {
 			document.getElementById("loadingLabel").innerHTML = "Ładowanie/Loading... (" + i + "/" + totalPhotos + ")";
+			if (i == 1) {
+				document.getElementById("left").style.height = document.getElementById("photo").offsetHeight + "px";
+				document.getElementById("right").style.height = document.getElementById("photo").offsetHeight + "px";
+			}
 			if (i == totalPhotos) {
 				document.getElementById("loadingScreen").style.display = "none";
 				document.getElementById("displayItAfterLoading").style.display = "block";
