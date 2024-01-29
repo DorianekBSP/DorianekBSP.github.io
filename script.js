@@ -33,7 +33,6 @@ function jumpToPhoto() {
 function loadButtonsSize() {
 	document.getElementById("left").style.height = document.getElementById("photo").offsetHeight + "px";
 	document.getElementById("right").style.height = document.getElementById("photo").offsetHeight + "px";
-	console.log(document.getElementById("photo").offsetHeight);
 }
 window.addEventListener('resize', loadButtonsSize);
 
@@ -55,9 +54,9 @@ function toggleLanguage() {
 let shouldSkip = false;
 function skipLoading() {
 	shouldSkip = true;
+	loadButtonsSize();
 	document.getElementById("loadingScreen").style.display = "none";
 	document.getElementById("displayItAfterLoading").style.display = "block";
-	
 }
 
 let preloadedImages = [];
@@ -68,11 +67,6 @@ function preloadImages() {
         preloadedImages.push(img);
 		img.onload = function() {
 			document.getElementById("loadingLabel").innerHTML = "Ładowanie/Loading... (" + i + "/" + totalPhotos + ")";
-			if (i == 1) {
-				alert(1)
-				document.getElementById("left").style.height = document.getElementById("photo").offsetHeight + "px";
-				document.getElementById("right").style.height = document.getElementById("photo").offsetHeight + "px";
-			}
 			if (i == totalPhotos) {
 				document.getElementById("loadingScreen").style.display = "none";
 				document.getElementById("displayItAfterLoading").style.display = "block";
