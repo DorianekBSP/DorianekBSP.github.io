@@ -33,6 +33,7 @@ function jumpToPhoto() {
 function loadButtonsSize() {
 	document.getElementById("left").style.height = document.getElementById("photo").offsetHeight + "px";
 	document.getElementById("right").style.height = document.getElementById("photo").offsetHeight + "px";
+	console.log(document.getElementById("photo").offsetHeight);
 }
 window.addEventListener('resize', loadButtonsSize);
 
