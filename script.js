@@ -51,9 +51,12 @@ function toggleLanguage() {
 	}
 }
 
-let shouldSkip = false
+let shouldSkip = false;
 function skipLoading() {
 	shouldSkip = true;
+	document.getElementById("loadingScreen").style.display = "none";
+	document.getElementById("displayItAfterLoading").style.display = "block";
+	
 }
 
 let preloadedImages = [];
@@ -70,8 +73,6 @@ function preloadImages() {
 			}
 		}
 		if (shouldSkip) {
-			document.getElementById("loadingScreen").style.display = "none";
-			document.getElementById("displayItAfterLoading").style.display = "block";
 			break;
 		}
 	}
