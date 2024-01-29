@@ -31,10 +31,10 @@ function jumpToPhoto() {
 }
 
 function loadButtonsSize() {
-	let previousSize = document.getElementById("left").style.height
+	let previousSize = document.getElementById("photo").offsetHeight
 	document.getElementById("left").style.height = document.getElementById("photo").offsetHeight + "px";
 	document.getElementById("right").style.height = document.getElementById("photo").offsetHeight + "px";
-	if (previousSize == document.getElementById("left").style.height) {
+	if (previousSize == document.getElementById("photo").offsetHeight) {
 		setTimeout(loadButtonsSize);
 	}
 }
