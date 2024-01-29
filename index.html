@@ -10,23 +10,29 @@
     <meta name="keywords" content="zdjecia, zdjęcia, photos, dorian pajak, dorian pająk, dron, drone, dorianekbsp" />
   </head>
   <body onload="loadButtonsSize()">
-	<button id="left" onclick="previousPhoto()">&lt;</button>
-	<img id="photo" src="Photos/Photo (1).JPG">
-	<button id="right" onclick="nextPhoto()">&gt;</button>
-	<div class="clear"></div>
-	<div class="divToStyle">
-		<button onclick="toggleLanguage()" id="toggleLanguageButton">Switch to English</button>
+	<div id="loadingScreen">
+		<span id="loadingLabel">Ładowanie/Loading...</span>
+		<button id="skipButton" onclick="skipLoading()">Pomiń/Skip</button>
 	</div>
-	<div class="divToStyle">
-		<span id="currentPhotoLabel">Bieżące zdjęcie: </span>
-		<span id="currentPhotoNumber">1/81</span>
-	</div>
-    <label><div><span id="currentPhotoSpan">Skocz do zdjęcia: </span>
-		<input type="number" id="photoNumberInput" min="1" max="81" value="1">
-		<button id="jumpButton" onclick="jumpToPhoto()">Skocz</button>
-	</div></label> 
-	<div class="divToStyle">E-mail: doriandominik49@wp.pl, Facebook: 
-		<a href="https://www.facebook.com/profile.php?id=100077063484869" target="_blank">Dorian Pająk</a>
+	<div id="displayItAfterLoading">
+		<button id="left" onclick="previousPhoto()">&lt;</button>
+		<img id="photo" src="Photos/Photo (1).JPG">
+		<button id="right" onclick="nextPhoto()">&gt;</button>
+		<div class="clear"></div>
+		<div class="divToStyle">
+			<button onclick="toggleLanguage()" id="toggleLanguageButton">Switch to English</button>
+		</div>
+		<div class="divToStyle">
+			<span id="currentPhotoLabel">Bieżące zdjęcie: </span>
+			<span id="currentPhotoNumber">1/81</span>
+		</div>
+		<label><div><span id="currentPhotoSpan">Skocz do zdjęcia: </span>
+			<input type="number" id="photoNumberInput" min="1" max="81" value="1">
+			<button id="jumpButton" onclick="jumpToPhoto()">Skocz</button>
+		</div></label> 
+		<div class="divToStyle">E-mail: doriandominik49@wp.pl, Facebook: 
+			<a href="https://www.facebook.com/profile.php?id=100077063484869" target="_blank">Dorian Pająk</a>
+		</div>
 	</div>
   </body>
 </html>
