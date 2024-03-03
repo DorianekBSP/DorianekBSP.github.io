@@ -73,4 +73,7 @@ function preloadImages(i) {
 		}
 	}
 }
-preloadImages(1);
+function loadButtonsSizeAndLoadImages() {
+	loadButtonsSize();
+	preloadImages(1);
+}
