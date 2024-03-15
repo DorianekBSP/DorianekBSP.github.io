@@ -57,7 +57,6 @@ button, input {
 	font-size: 2vw;
 	font-weight: 600;
 	line-height: 2vw;
-	padding: 0px;
 	position: relative;
 	text-align: center;
 	text-decoration: none;
@@ -67,6 +66,11 @@ button, input {
 	vertical-align: middle;
 	white-space: nowrap;
 	font-size: 2vw;
+	padding: 5px;
+}
+
+input {
+	padding: 2.5px;
 }
 
 button:focus:not(:focus-visible):not(.focus-visible) {
