@@ -65,7 +65,7 @@ function preloadImages_pl(i, lastPhoto) {
 	img.onload = function() {
 		document.getElementById("loadingLabel").innerHTML = "Ładowanie... (" + i + "/" + lastPhoto.toString() + ")";
 		if (shouldSkip == false && i != lastPhoto) {
-			preloadImages(i + 1, lastPhoto);
+			preloadImages_pl(i + 1, lastPhoto);
 		} else {
 			skipLoading();
 		}
@@ -77,7 +77,7 @@ function preloadImages_en(i, lastPhoto) {
 	img.onload = function() {
 		document.getElementById("loadingLabel").innerHTML = "Loading... (" + i + "/" + lastPhoto.toString() + ")";
 		if (shouldSkip == false && i != lastPhoto) {
-			preloadImages(i + 1, lastPhoto);
+			preloadImages_en(i + 1, lastPhoto);
 		} else {
 			skipLoading();
 		}
