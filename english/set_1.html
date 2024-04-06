@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dorianek_BSP</title>
+	<script src="../script.js"></script>
+	<link rel="stylesheet" href="../style.css" type="text/css" />
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1" />
+	<link rel="icon" type="image/x-icon" href="../icon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="zdjecia, zdjęcia, photos, dorian pajak, dorian pająk, dron, drone, dorianekbsp" />
+  </head>
+  <body onload="loadButtonsSizeAndLoadImages(1, 20)">
+	<div id="loadingScreen">
+		<span id="loadingLabel">Loading...</span><br/>
+		<button id="skipButton" onclick="skipLoading()">Skip</button>
+	</div>
+	<div id="displayItAfterLoading">
+		<h1 id="title">Dorianek_BSP - photos from a drone (from 1 to 20)</h1>
+		<button id="left" onclick="previousPhoto()">&lt;</button>
+		<img id="photo" src="../Photos/Photo (1).JPG">
+		<button id="right" onclick="nextPhoto()">&gt;</button>
+		<div class="clear"></div>
+		<div class="divToStyle"><h1>
+			Current photo: <span id="currentPhotoNumber">1/1/20</span>
+		</h1></div>
+		<label><div><h1>Jump to photo:
+			<h1><input type="number" id="photoNumberInput" min="1" max="20" value="1">
+			<button id="jumpButton" onclick="jumpToPhoto()">Jump</button></h1>
+		</h1></div></label> 
+		<div class="divToStyle"><h1>E-mail: doriandominik49@wp.pl<br>
+			Facebook: 
+			<a href="https://www.facebook.com/profile.php?id=100077063484869" target="_blank">Dorian Pająk</a><br>
+			Instagram: 
+			<a href="https://www.instagram.com/dorianek_bsp/" target="_blank">dorianek_bsp</a><br>
+			<a href="main.html">Go back</a>
+		</h1></div>
+	</div>
+  </body>
+</html>
