@@ -59,11 +59,11 @@ function skipLoading() {
 	document.getElementById("loadingScreen").style.display = "none";
 	document.getElementById("displayItAfterLoading").style.display = "block";
 }
-function preloadImages(i, lastPhoto) {
+function preloadImages_pl(i, lastPhoto) {
 	let img = new Image();
 	img.src = "../Photos/Photo (" + [i] + ").JPG";
 	img.onload = function() {
-		document.getElementById("loadingLabel").innerHTML = "Ładowanie/Loading... (" + i + "/" + lastPhoto.toString() + ")";
+		document.getElementById("loadingLabel").innerHTML = "Ładowanie... (" + i + "/" + lastPhoto.toString() + ")";
 		if (shouldSkip == false && i != lastPhoto) {
 			preloadImages(i + 1, lastPhoto);
 		} else {
@@ -71,8 +71,25 @@ function preloadImages(i, lastPhoto) {
 		}
 	}
 }
-function loadButtonsSizeAndLoadImages(first, last) {
+function preloadImages_en(i, lastPhoto) {
+	let img = new Image();
+	img.src = "../Photos/Photo (" + [i] + ").JPG";
+	img.onload = function() {
+		document.getElementById("loadingLabel").innerHTML = "Loading... (" + i + "/" + lastPhoto.toString() + ")";
+		if (shouldSkip == false && i != lastPhoto) {
+			preloadImages(i + 1, lastPhoto);
+		} else {
+			skipLoading();
+		}
+	}
+}
+function loadButtonsSizeAndLoadImages_pl(first, last) {
 	loadButtonsSize();
 	setNewRange(first, last);
-	preloadImages(firstPhoto, last);
+	preloadImages_pl(firstPhoto, last);
+}
+function loadButtonsSizeAndLoadImages_en(first, last) {
+	loadButtonsSize();
+	setNewRange(first, last);
+	preloadImages_en(firstPhoto, last);
 }
