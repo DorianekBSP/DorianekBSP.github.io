@@ -189,3 +189,7 @@ h1 > a {
 a {
 	all: revert;
 }
+
+head {
+	display: none !important;
+}
