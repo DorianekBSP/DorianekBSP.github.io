@@ -1,0 +1,233 @@
+html, body {
+	font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+	background-color: #0a600b;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#container_index, #container_main {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+
+#left_pc, #right_pc {
+	display: none;
+}
+
+#photo {
+	width: 100%;
+	float: left;
+	height: auto;
+}
+
+#left_mobile, #right_mobile {
+	width: 50%;
+	float: left;
+	height: auto;
+	transform: scale(1, 2);
+}
+
+@media (min-width: 1000px) {
+	#container_index, #container_main {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		margin: auto;
+		width: 900px;
+		height: 100%;
+	}
+	
+	#photo {
+		width: 80%;
+		float: left;
+		height: auto;
+	}
+	
+	#left_pc, #right_pc {
+		box-sizing: border-box;
+		width: 10%;
+		float: left;
+		max-height: 100%;
+		display: block;
+	}
+	
+	#left_mobile, #right_mobile {
+		display: none;
+	}
+}
+
+#container_index > a, #container_main > a {
+	border: 4px solid rgba(27, 31, 35, .15);
+	background-color: #2ea44f;
+	justify-content: center;
+	text-decoration: none;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	color: #fff;
+	width: 100%;
+}
+
+#container_index > a:hover, #container_main > a:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 4px;
+}
+
+#skipButton {
+	display: block;
+	margin: auto;
+	width: auto;
+}
+
+#loadingLabel {
+	display: block;
+	width: 100%;
+	text-align: center;
+    color: #fff;
+}
+
+#displayItAfterLoading {
+	display: none;
+}
+
+#footer {
+	padding: 8px;
+	color: #fff;
+	text-align: center;
+}
+
+button, input {
+	appearance: none;
+	background-color: #2ea44f;
+	border: 4px solid rgba(27, 31, 35, .15);
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: inline;
+	font-size: 2.5vw;
+	font-weight: 600;
+	line-height: 2vw;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: middle;
+	white-space: nowrap;
+	padding: 8px;
+}
+
+.clear {
+	clear: both;
+}
+
+#displayItAfterLoading {
+	display: none;
+}
+
+label {
+  text-align: center;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+	padding: 0;
+}
+
+button:hover {
+	background-color: #1b863a;
+}
+
+button:focus {
+	box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+	outline: none;
+}
+
+button:disabled {
+	background-color: #94d3a2;
+	border-color: rgba(27, 31, 35, .1);
+	color: rgba(255, 255, 255, .8);
+	cursor: default;
+}
+
+button:active {
+	background-color: #298e46;
+	box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.divToStyle, #currentPhotoSpan {
+	text-align: center;
+	color: #fff;
+}
+
+/*
+
+#title, div > h1, :not(h1 > input, h1 > button) {
+	font-size: 2.5vw;
+	text-align: center;
+	display: block;
+	color: #fff;
+	width: 100%;
+	margin: 0;
+}
+
+#currentPhotoNumber {
+	display: inline;
+}
+
+button, input, button {
+	appearance: none;
+	background-color: #2ea44f;
+	border: 4px solid rgba(27, 31, 35, .15);
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: inline;
+	font-size: 2.5vw;
+	font-weight: 600;
+	line-height: 2vw;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: middle;
+	white-space: nowrap;
+	padding: 5px;
+	width: 10%;
+}
+
+title {
+	display: none !important;
+}
+
+h1 > a {
+	font-size: 2.5vw;
+	text-align: center;
+	color: #fff;
+	display: inline;
+	width: 100%;
+	margin: 0;
+}
+
+a {
+	all: revert;
+}
+
+head {
+	display: none !important;
+}
+
+*/
